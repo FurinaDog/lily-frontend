@@ -1,6 +1,7 @@
 import type { Route } from "next";
 import Link from "next/link";
 
+import { scaffoldMessages } from "@/config/messages";
 import type { RouteScaffold } from "@/types/site";
 
 type SectionNavProps = {
@@ -9,7 +10,7 @@ type SectionNavProps = {
 
 export function SectionNav({ routes }: SectionNavProps) {
   return (
-    <nav aria-label="Section routes">
+    <nav aria-label={scaffoldMessages.sectionNav.label}>
       <ul className="grid gap-2">
         {routes.map((route) => (
           <li key={route.id}>

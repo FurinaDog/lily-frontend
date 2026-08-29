@@ -1,4 +1,5 @@
 import type { RouteScaffold } from "@/types/site";
+import { scaffoldMessages } from "@/config/messages";
 
 type PageScaffoldProps = {
   readonly route: RouteScaffold;
@@ -23,11 +24,11 @@ export function PageScaffold({ route, dynamicLabel }: PageScaffoldProps) {
 
       <section className="mt-8 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
         <article className="rounded-[1.5rem] border border-[var(--color-line)] bg-[var(--color-panel-muted)] p-6">
-          <h2 className="text-xl font-semibold">Contributor implementation note</h2>
+          <h2 className="text-xl font-semibold">
+            {scaffoldMessages.pageScaffold.implementationNote}
+          </h2>
           <p className="mt-3 text-base leading-7 text-[var(--color-muted)]">
-            This route is intentionally scaffolded. Contributors should implement
-            the real experience from the approved Figma design rather than reuse
-            removed demo content.
+            {scaffoldMessages.pageScaffold.implementationGuidance}
           </p>
           <p className="mt-4 text-base leading-7 text-[var(--color-muted)]">
             {route.figmaScope}
@@ -35,7 +36,9 @@ export function PageScaffold({ route, dynamicLabel }: PageScaffoldProps) {
         </article>
 
         <article className="rounded-[1.5rem] border border-[var(--color-line)] bg-[var(--color-panel-muted)] p-6">
-          <h2 className="text-xl font-semibold">Natural issue slices</h2>
+          <h2 className="text-xl font-semibold">
+            {scaffoldMessages.pageScaffold.issueSlices}
+          </h2>
           <ul className="mt-4 grid gap-3">
             {route.implementationAreas.map((area) => (
               <li
