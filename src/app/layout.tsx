@@ -15,7 +15,13 @@ const ibmPlexMono = IBM_Plex_Mono({
   weight: ["400", "500"],
 });
 
-export const metadata = createSiteMetadata();
+export const metadata = {
+  ...createSiteMetadata(),
+  icons: {
+    icon: "/icon.svg",
+    apple: "/apple-icon.png",
+  },
+};
 
 export default function RootLayout({
   children,

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 180" role="img" aria-labelledby="title">
+  <title id="title">Lily Protocol</title>
+  <rect width="180" height="180" rx="40" fill="#0b1726"/>
+  <path d="M90 35c18 0 34 13 38 30-13-4-28-1-38 9-10-10-25-13-38-9 4-17 20-30 38-30Z" fill="#63e6d8"/>
+  <path d="M90 74c10-10 25-13 38-9-4 17-20 30-38 30s-34-13-38-30c13-4 28-1 38 9Z" fill="#35bdb5"/>
+  <path d="M84 91h12v52H84z" fill="#63e6d8"/>
+</svg>
